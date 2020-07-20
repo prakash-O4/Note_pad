@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EBE7E7"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#fff"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:src="@drawable/file" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@id/image"
+                android:text="Title"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="44dp"
+                android:layout_toRightOf="@id/date"
+                android:text="09:24"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="44dp"
+                android:layout_toRightOf="@id/image"
+                android:text="2020/10/01"
+                android:textSize="28sp" />
+            <TextView
+                android:id="@+id/listId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/title"
+                android:layout_marginBottom="20dp"
+                android:text="TextView"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
